@@ -1,0 +1,106 @@
+html, body {
+	font-family: 'Langar', cursive;
+	font-size: 35pt;
+	background-color: #f1faee;
+	color: white;
+}
+
+#main {
+	height: 600px;
+	width: 500px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	grid-gap: 15px 15px;
+	grid-template-areas: "display display display display"
+	"display display display display"
+	"add subtract multiply divide"
+	"7 8 9 AC"
+	"4 5 6 backspace"
+	"1 2 3 equals"
+	"zero zero dot equals";
+	padding: 15px;
+	background-color: #1d3557;
+	border-radius: 10px;
+}
+
+.funcButtons, .digButtons {
+	border: 1px solid black;
+	user-select: none;
+	font-family: 'Langar', cursive;
+	font-size: 35pt;
+	border-radius: 10px;
+	color: white;
+}
+
+.digButtons {
+	background-color: #a8dadc;
+}
+
+.funcButtons {
+	background-color: #e63946;
+}
+
+.funcButtons:active, .digButtons:active {
+	font-size: 30pt;
+	opacity: 90%;
+}
+
+.funcButtons:focus, .digButtons:focus {
+	outline: none;
+}
+
+
+#display {
+	border: 1px solid black;
+	text-align: center;
+	grid-area: display;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	user-select: none;
+	background-color: #457b9d;
+}
+
+#display-top {
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: 20px;
+	font-size: 25pt;
+}
+
+#display-bottom {
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: 20px;
+	font-size: 40pt;
+}
+
+#n0 {
+	grid-area: zero;
+}
+
+#equals {
+	grid-area: equals;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	font-size: 18pt;
+	background-color: #457b9d;
+	color: white;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
