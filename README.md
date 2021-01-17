@@ -2,6 +2,8 @@
 
 A simple calculator application.
 
+Live Preview at: https://andromeda-m31.github.io/calculator/
+
 TODO:
 - Add keyboard support
 - Fix the sticky footer
